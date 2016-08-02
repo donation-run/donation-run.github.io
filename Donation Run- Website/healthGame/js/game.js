@@ -11,8 +11,7 @@ var answer = [
     'http://caretoclick.com//support-childrens-health/donate-clicks-likes-and-tweets-to-fund-medical-assistance-for-children',
     'http://thebreastcancersite.greatergood.com/clickToGive/bcs/home',
     'http://clicktogive.com/impact_kids_cancer',
-    'http://www.heart.org/HEARTORG/Giving/Support-Your-Community_UCM_311100_Article.jsp#.V6EG5pMrLVo',
-    ]
+        ]
     
     
 
