@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>EaselJS: Sprite Sheet Example</title>
+
+	<link href="css/shared.css" rel="stylesheet" type="text/css"/>
+	<link href="css/examples.css" rel="stylesheet" type="text/css"/>
+	<script src="js/examples.js"></script>
+	<script src="js/game.js"></script>
+
+	<script src="libs/preloadjs-NEXT.min.js"></script>
+
+	<script src="libs/easeljs-NEXT.combined.js"></script>
+    
+    <script src="libs/jquery-3.1.0.min.js"></script>
+	<!-- We also provide hosted minified versions of all CreateJS libraries.
+	  http://code.createjs.com -->
+	  
+<!-- 	<a id="link1" href= "https://www.google.com/">Click Here</a> -->
+
+<style>
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+</style>
+
+
+</head>
+
+<body onload="init();">
+
+<header>
+<!-- <header class="EaselJS">  -->
+ 
+<h2>Donation Run - Education</h2>
+
+	<p>
+	<strong>Instructions:</strong>
+		Click on the game to jump higher up and collect the school supplies. 
+		If you reach a certain score (20), you will be able to help fund educational needs for students! Click on the links in the pop up to help students around the world for free!
+		Spread the game & these websites to make an even bigger impact on the world.
+	<!-- <a id="link1" href= "https://www.google.com/">Link 1</a>
+	<a id="link2" href= "https://www.google.com/">Link 2</a>
+	<a id="link3" href= "https://www.google.com/">Link 3</a>
+	<a id="link4" href= "https://www.google.com/">Link 4</a>
+	<a id="link5" href= "https://www.google.com/">Link 5</a>
+	<a id="link6" href= "https://www.google.com/">Link 6</a>
+	<a id="link7" href= "https://www.google.com/">Link 7</a>
+	<a id="link8" href= "https://www.google.com/">Link 8</a>
+	<a id="link9" href= "https://www.google.com/">Link 9</a>
+	<a id="link10" href= "https://www.google.com/">Link 10</a>
+	<a id="link11" href= "https://www.google.com/">Link 11</a>
+	<a id="link12" href= "https://www.google.com/">Link 12</a>
+	<a id="link13" href= "https://www.google.com/">Link 13</a>
+	<a id="link14" href= "https://www.google.com/">Link 14</a> -->
+	
+	</p>
+ 
+</header>
+
+<h3>Score: <span id="score"></span></h3>    
+    
+<div>
+	<canvas id="animal" width="960" height="400"></canvas>
+</div>
+    
+    
+<h2>Modal Example</h2>
+
+<!-- Trigger/Open The Modal -->
+<!-- 
+<button id="myBtn">You can help too</button>
+ -->
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+	<span class="close">×</span>
+    
+
+<p>
+You can help too! Click
+
+<a href='http://theliteracysite.greatergood.com/clickToGive/lit/home' id='link_content' >here</a>
+
+, 
+
+<a href='http://caretoclick.com/support-education-for-children-in-need/thank-you-for-helping-fund-education' id='link_content' >here</a>
+
+, or
+
+<a href='http://www.twowings.com/en/43/' id='link_content'>here</a>
+
+to click & donate to different organizations that support the education of students locally & internationally! Refresh to play again!
+<link media="screen" rel="stylesheet" href="colorbox.css" />
+ 
+</p>
+  
+ 
+  </div>
+
+</div>
+
+<!-- 
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal
+
+var test = 1
+	if (test == 1 ) {
+	 modal.style.display = "block";
+}
+
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+ -->
+
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>EaselJS: Sprite Sheet Example</title>
+
+	<link href="css/shared.css" rel="stylesheet" type="text/css"/>
+	<link href="css/examples.css" rel="stylesheet" type="text/css"/>
+	<script src="js/examples.js"></script>
+	<script src="js/game.js"></script>
+
+	<script src="libs/preloadjs-NEXT.min.js"></script>
+
+	<script src="libs/easeljs-NEXT.combined.js"></script>
+    
+    <script src="libs/jquery-3.1.0.min.js"></script>
+	<!-- We also provide hosted minified versions of all CreateJS libraries.
+	  http://code.createjs.com -->
+	  
+<!-- 	<a id="link1" href= "https://www.google.com/">Click Here</a> -->
+
+<style>
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+</style>
+
+
+</head>
+
+<body onload="init();">
+
+<header>
+<!-- <header class="EaselJS">  -->
+ 
+<h2>Donation Run - Health</h2>
+
+	<p>
+	<strong>Instructions:</strong>
+		Click on the game to fly higher up and collect the medical supplies. Pills are worth more. Avoid all sick cells.
+		If you reach a 50, you'll be able to help doctors continue their research to cure the incurable. Click on the link on the pop-up when you get it, you'll be able to help many innocent people for FREE! Spread this website and game to other people to help those in need.
+	
+	
+	</p>
+ 
+</header>
+
+<h3>Score: <span id="score"></span></h3>    
+    
+<div>
+	<canvas id="animal" width="960" height="400"></canvas>
+</div>
+    
+    
+<h2>Modal Example</h2>
+
+<!-- Trigger/Open The Modal -->
+<!-- 
+<button id="myBtn">You can help too</button>
+ -->
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+	<span class="close">×</span>
+    
+
+<p>
+<a href='http://www.nongmoproject.org/learn-more/' id='link_content' >You can help too! Just click here! Refresh the page to play again!</a>
+
+
+<link media="screen" rel="stylesheet" href="colorbox.css" />
+ 
+</p>
+  
+ 
+  </div>
+
+</div>
+
+<!-- 
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal
+
+var test = 1
+	if (test == 1 ) {
+	 modal.style.display = "block";
+}
+
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+ -->
+
+</body>
+</html>
